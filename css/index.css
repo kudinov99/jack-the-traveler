@@ -169,3 +169,28 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
+/* Carousel */
+
+.carousel img {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button-back, .button {
+    margin: 20px;
+}
+.button-forward {
+    margin: 20px;
+}
+
+.button-stop {
+    margin: 20px;
+}

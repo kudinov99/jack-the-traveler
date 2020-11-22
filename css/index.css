@@ -148,6 +148,25 @@ body {
 
 /*results*/
 
+.results-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    padding: 15px;
+}
+
+.box-decoration {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 2px;
+    width: 25px;
+    background-color: rgb(115, 145, 105);
+}
+
 .results {
     background-color: black;
     color: white;
@@ -174,23 +193,19 @@ body {
 
 .carousel img {
     display: block;
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
 }
 
-.btn {
+.buttons-carousel {
     display: flex;
     justify-content: center;
+}
+
+.button-back, .button-forward, .button-stop {
+    margin: 20px;
+    padding: 3px;
+    border-radius: 10%;
     
 }
 
-.button-back, .button {
-    margin: 20px;
-}
-.button-forward {
-    margin: 20px;
-}
-
-.button-stop {
-    margin: 20px;
-}

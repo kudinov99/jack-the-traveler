@@ -9,11 +9,11 @@ const images = [
     'img/carousel/waterfalll.jfif'
 ]
 let currentIndex = 0; 
-const slideInterval = setInterval(slide, 1000);
+const interval = setInterval(slide, 1000);
 
 function slide() {
     currentIndex =  ++currentIndex > images.length - 1 ? 0 : currentIndex;
-    showSlide(currentIndex); 
+    showSlide(currentIndex);
 }
 function back() {
     currentIndex =  --currentIndex < 0 ? images.length - 1 : currentIndex;
@@ -24,9 +24,8 @@ function forward() {
     showSlide(currentIndex);
 }
 function stop() {
-
+    clearInterval(interval);
 }
-
 
 document.querySelector('.carousel .button-back').addEventListener('click', back)
 document.querySelector('.carousel .button-forward').addEventListener('click', forward)

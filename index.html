@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="timer"></div>
-    <div class="countdown"></div>
     <header id="home">
         <div class="top-navbar">
             <img class="logo" src="img/plant.png" alt="logo">
@@ -45,7 +43,7 @@
                 <img class="black-decoration" src="img/decoration-black.png" alt="black-color-decoration">
                 <h1> Hi! I'm <span class="green-text"> Jack </span>  the Traveler </h1>
                 <p>I share lifestyle and travel tips & life hacks</p>
-                <button type="button" class="btn btn-light button1">My Story</button>
+                <button type="button" class="btn btn-light button-green">My Story</button>
                 <button type="button" class="btn btn-light button">Ask Me</button>
             </div>
             <div class="banner-photo">
@@ -93,15 +91,6 @@
                 </div>
             </div>
         </section>
-       <!-- <div class="carousel">
-            <img src="img/carousel/backpacks-on-stones.jfif" alt="carousel-images">
-            <div class="buttons-carousel">   
-                <button class="button-back">Back</button>
-                <button class="button-stop">Stop Slide</button>
-                <button class="button-forward">Forward</button>
-            </div>
-        </div> -->
-        
         <section class="stories">
             <div class="stories-background">
                 <div class="storie-title">
@@ -110,7 +99,7 @@
                 </div>
                 <div class="stories-box">
                     <div class="stories-img">
-                        <img src="https://api.getblog.app/customer/post/5fc2619edca9dca2519f2711/preview?W=1170" alt="article-photo">
+                        <img src="img/amsterdam-foto.jfif" alt="foto-amsterdam">
                     </div>                
                     <div class="stories-content">
                         <p class="date">5 Nov 2020</p>
@@ -135,41 +124,95 @@
                     <a class="green-text" href="https://www.instagram.com/explore/tags/traveler/?hl=ru"> @jack_the_traveler </a>
                 </p>
             </div>
-            
-        </section>
-        <!--
-        <section class="quote">
-            <img src="img/quotation-mark.jpg" alt="quotation-mark" height="50">
-            <p>Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain.</p>
-            <p>Jack Kerouac</p>
-            <img src="img/mountain.jfif" alt="mountains">
+            <div class="container mt-3">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                  </ul>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/carousel/backpacks-on-stones.jfif" alt="backpacks-on-stones" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/mountains-big-river.jfif" alt="mountains-big-river" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/mountains-river.jfif" alt="mountains-river" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/mountains-road.jfif" alt="mountains-road" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/mountains-sky.jfif" alt="mountains-sky" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/mountains-waterfall.jfif" alt="mountains-waterfall" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/taipai-station.jfif" alt="taipai-station" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/travel-equipment.jfif" alt="travel-equipment" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carousel/waterfall.jfif" alt="waterfall">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+            </div>            
         </section>
         <section class="follow-me">
-            <h2>Follow Me</h2>
-            <p>Join me in social media and stay tuned!</p>
-            <a href="https://www.instagram.com/?hl=ru"><img src="img/insta.svg" alt="instagram-logo" height="20"></a>
-            <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook-logo" height="20"></a>
-            <a href="https://www.youtube.com/"><img src="img/youtube.svg" alt="youtube-logo" height="20"></a>
+            <div class="box-follow-me">
+                <h2>Follow Me</h2>
+                <div class="follow-me-decoration"></div>
+                <p>Join me in social media and stay tuned!</p>
+                <div class="box-icons">
+                    <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook-logo"></a>
+                    <a href="https://www.instagram.com/?hl=ru"><img src="img/instagram.svg" alt="instagram-logo"></a>
+                    <a href="https://www.youtube.com/"><img src="img/youtube.svg" alt="youtube-logo"></a>
+                </div>
+            </div>
         </section>
-        -->
-
+        <section id="contacts">
+            <div class="ask-me-box">
+                <div class="content-box">
+                    <h2 class="green-text"><span class="ask-me">Ask Me</span> Anything!</h2>
+                    <p>Feel free to ask my any question about my travels, blog or if you have any business inquires. Fill out the form below or send me an email to jacktravel@email.com</p>
+                 </div>
+                <div class="form">
+                    <form> 
+                        <label>
+                            <input type="text" placeholder="Name" required>
+                        </label>
+                        <label> 
+                            <input type="email" placeholder="Email" required>
+                        </label>
+                        <label>
+                            <textarea placeholder="Your Massage"></textarea>
+                        </label>
+                    </form>
+                </div>
+                <input type="Submit">
+            </div>
+        </section>
     </main>
-    <!-- <footer id="contacts">
-        <h2 class="green-text> Ask Me Anything!</h2>
-        <p>Feel free to ask my any question about my travels, blog or if you have any business inquires. Fill out the form below or send me an email to jacktravel@email.com</p>
-        <form>
-            <label>
-                <input type="text" placeholder="Name" required>
-            </label>
-            <label> 
-                <input type="email" placeholder="Email" required>
-            </label>
-            <label>
-                <textarea placeholder="Your Massage"></textarea>
-            </label>
-            <input type="Submit">
-        </form>
-    </footer> -->
+    <footer>
+        
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/carousel.js"></script>

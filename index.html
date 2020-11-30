@@ -26,13 +26,10 @@
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#travel-tips">Travel Tips</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Contactss</a>
+                            <a class="nav-link" href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -53,9 +50,9 @@
     </header>
     <main>
         <section class="background-image">
-            <section class="about-me">
+            <section id="about-me">
                 <div class="text-background">
-                    <h2 id="about-me">About Me</h2>
+                    <h2>About Me</h2>
                     <div class="green-decoration"></div>
                     <h3> Hi, I'm Jack and I travel around the world </h3>
                     <p> I was born in Kansas, and like little Ellie, I always dreamed that a hurricane would take me somewhere to another country. And once I really ended up in another country - in China, studying at a business school. There I began to travel a lot around Asia in my free time and then moved to work in Munich.</p>
@@ -91,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class="stories">
+        <section id="blog">
             <div class="stories-background">
                 <div class="storie-title">
                     <h2> Latest Stories</h2>
@@ -113,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section id="gallery">
             <div class="black-gallery-decoration">
                 <img src="//res2.weblium.site/res/5e06193d298a3f002209fbce/5e1c6dbe6aba340022ff6b2a_optimized_700_e1314x114-307x26" alt="black-color-decoration">
             </div>
@@ -190,23 +187,24 @@
         <section id="contacts">
             <div class="ask-me-box">
                 <div class="content-box">
-                    <h2 class="green-text"><span class="ask-me">Ask Me</span> Anything!</h2>
-                    <p>Feel free to ask my any question about my travels, blog or if you have any business inquires. Fill out the form below or send me an email to jacktravel@email.com</p>
+                    <h2 class="green-text">Ask Me<br> Anything!</h2>
+                    <img class="contacts-black-decoration" src="img/decoration-black.png" alt="black-color-decoration">
+                    <p>Feel free to ask my any question about my travels, blog or if you have any business inquires. Fill out the form below or send me an email to <span class="green-text">jacktravel@email.com</span></p>
                  </div>
-                <div class="form">
-                    <form> 
+                <div>
+                    <form class="form-box"> 
                         <label>
-                            <input type="text" placeholder="Name" required>
+                            <input class="form" type="text" placeholder="Name*" required>
                         </label>
                         <label> 
-                            <input type="email" placeholder="Email" required>
+                            <input class="form" type="email" placeholder="Email*" required>
                         </label>
                         <label>
-                            <textarea placeholder="Your Massage"></textarea>
+                            <textarea class="form" placeholder="Your Massage"></textarea>
                         </label>
                     </form>
                 </div>
-                <input type="Submit">
+                <input class="submit-btn" type="Submit" value="SUBMIT">
             </div>
         </section>
     </main>

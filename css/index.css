@@ -61,7 +61,6 @@ body {
 .banner-photo img {
     width: 100%;
     display: block; 
-    min-width: 400px;
 }
 
 @media (max-width: 755px) { 
@@ -144,7 +143,7 @@ body {
     background-color: black;
 }
 
-.about-me {
+#about-me {
     padding: 170px 40px 0px 40px;
 }
 
@@ -158,12 +157,12 @@ body {
     padding-top: 10px;
 }
 
-.about-me p {
+#about-me p {
     margin: 0px;
     padding: 20px 0px 20px 0px;
 }
 
-.about-me h2 {
+#about-me h2 {
     font-size: 38px;
     font-weight: bold;
 }
@@ -188,6 +187,12 @@ body {
         display: flex;
         justify-content: space-around;
     }
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
 }
 
 .results-box {
@@ -290,7 +295,6 @@ body {
     width: auto;
     padding: 20px 20px 20px 20px;
     width: 100%;
-    min-width: 400px;
 }
 
 .stories-box {
@@ -325,7 +329,7 @@ body {
     }
 
     .stories-img {
-        max-width: 450px;
+        min-width: 450px;
     }
 }
 
@@ -375,6 +379,8 @@ body {
     height: 550px;
     background-repeat: no-repeat;
     display: block;
+    margin-top: 50px;
+
 }
 
 .follow-me-decoration {
@@ -414,16 +420,66 @@ body {
 /* Contacts */
 
 .ask-me-box {
+    padding: 50px 20px 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: solid black;
-    width: 350px;
-    height: 880px;
+    width: 35%;
+    height: 95%;
     margin: auto;
+    background-color: white;
 }
 .content-box h2 {
     font-size: 38px;
     font-weight: bold;
+    text-align: center;
 }
+
+.content-box p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#contacts {
+    height: 800px;
+    margin-top: -45px;
+    background-image: url(../img/mauntain-background.png);
+    display: block;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 45%;
+}
+
+.contacts-black-decoration {
+    margin: auto;
+    display: block;
+    width: 99%;
+    padding: 50px;  
+}
+
+.form {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(42 47 51 / 12%);
+    font-size: 12px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 10px 5px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit-btn {
+    width: 250px;
+    height: 50px;
+    background-color: var(--green-color);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 12px;
+}
+

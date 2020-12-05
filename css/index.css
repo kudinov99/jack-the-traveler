@@ -135,7 +135,6 @@ body {
 .button-green {
     color: white;
     background-color: var(--green-color);
-    border-color: none;
     text-transform: uppercase;
     padding: 15px;
     width: 110px;
@@ -388,8 +387,8 @@ body {
     font-weight: bold;
 }
 
-.instagram-subscribe p a{
-    font-weight: 20px;
+.instagram-subscribe p {
+    font-size: 20px;
 }
 
 .gallery-decoration {
@@ -522,7 +521,7 @@ body {
     background-color: var(--green-color);
     border-color: rgba(0, 0, 0, 0);
     color: white;
-    font-weight: 12px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -609,10 +608,8 @@ footer {
     background-color: var(--green-color);
     border-color: rgba(0, 0, 0, 0);
     color: white;
-    font-weight: 12px;
     font-weight: bold;
     font-size: 12px;
-
 }
 
 .submit-btn-footer:hover {

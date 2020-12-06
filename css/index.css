@@ -6,11 +6,13 @@
     font-family: 'Poppins', sans-serif;
     --green-color: #739169;
 }
+:root {
+    scroll-behavior: smooth;
+}
 
 body {
     max-width: 1200px;
     margin: auto;
-    scroll-behavior: smooth;
 }
 
 .navbar-collapse {
@@ -461,7 +463,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     height: 95%;
     margin: auto;
     background-color: white;
